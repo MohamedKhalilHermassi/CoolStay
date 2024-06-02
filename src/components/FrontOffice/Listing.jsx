@@ -1,7 +1,21 @@
 import React from 'react'
 import Gallery from './Gallery'
+import ReactImageGallery from 'react-image-gallery'
 
 function Listing() {
+  const images = [
+    {
+      original: "https://picsum.photos/id/1018/1000/600/",
+      thumbnail: "https://picsum.photos/id/1018/250/150/",
+      
+    },
+    {
+
+        original: "https://picsum.photos/id/1018/1000/600/",
+        thumbnail: "https://picsum.photos/id/1018/250/150/",
+        
+      }
+  ];
   return (
 
 
@@ -13,7 +27,7 @@ function Listing() {
     <a href=''>
   <a href="#">
     <div className='pb-3'>
-    <Gallery></Gallery>
+    <ReactImageGallery items={images} showPlayButton={false} showThumbnails={false} showNav={false}  showFullscreenButton={false} showBullets={true} disableKeyDown={true}/>
     </div>
   
 
