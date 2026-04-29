@@ -1,0 +1,17 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+appsettings.Production.json
+
+# Node
+node_modules/
+dist/
+.env
+.env.local
+
+# Misc
+.DS_Store
+Thumbs.db
